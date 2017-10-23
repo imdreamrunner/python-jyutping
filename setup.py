@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='jyutping',
-    version='0.3.1',
+    version='0.3.2',
     packages=['jyutping',],
     license='MIT',
     author='Ivor Zhou',
@@ -14,4 +14,5 @@ setup(
     url='https://github.com/imdreamrunner/python-jyutping',
     description='Python tool to convert Chinese characters to Jyutping.',
     long_description=open('README.rst', encoding='utf-8').read(),
+    include_package_data=True,
 )
