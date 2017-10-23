@@ -8,5 +8,6 @@ setup(
     author='Ivor Zhou',
     author_email='hello@ivorz.com',
     url='https://github.com/imdreamrunner/python-jyutping',
-    long_description=open('README').read(),
+    description='Python tool to convert Chinese characters to Jyutping.',
+    long_description=open('README.rst').read(),
 )
