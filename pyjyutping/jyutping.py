@@ -18,8 +18,8 @@ def search_single(character):
     if len(dictionary.CHS_DICT) == 0 or len(dictionary.CHT_DICT) == 0:
         dictionary.load_dictionary()
     jyp = dictionary.CHS_DICT.get(character) or dictionary.CHT_DICT.get(character)
-    if ',' in jyp:
-        jyp = jyp.split(',')
+    if '/' in jyp:
+        jyp = jyp.split('/')
     return jyp
 
 
