@@ -20,5 +20,3 @@ Usage
     >>> jyutping.get('广东话')  # Python 3
     >>> jyutping.get(u'广东话')  # Python 2
     ['gwong2', 'dung1', 'waa6']
-
-.. note::

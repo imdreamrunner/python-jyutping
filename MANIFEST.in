@@ -1,2 +1,2 @@
-include README
+include README.rst
 recursive-include jyutping *.txt
