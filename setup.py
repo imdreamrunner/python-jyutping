@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='jyutping',
     version='0.1dev',
-    packages=['pyjyutping',],
+    packages=['jyutping',],
     license='MIT',
     author='Ivor Zhou',
     author_email='hello@ivorz.com',
