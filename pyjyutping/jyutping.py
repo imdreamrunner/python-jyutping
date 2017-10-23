@@ -23,5 +23,8 @@ def search_single(character):
     return jyp
 
 
+def _test(word):
+    print(word, jyutping(word))
+
 if __name__ == '__main__':
-    print(jyutping('广东话'))
+    _test('广东话')
