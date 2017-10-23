@@ -1,2 +1,5 @@
+import os
+
 def log(message):
-    print(message)
+    if os.environ.get('JYUTPING_DEBUG'):
+        print(message)

@@ -1,1 +1,1 @@
-from .jyutping import jyutping
+from .jyutping import get_jyutping as get

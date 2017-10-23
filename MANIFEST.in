@@ -1,2 +1,2 @@
 include README
-recursive-include data *.txt
+recursive-include jyutping *.txt
