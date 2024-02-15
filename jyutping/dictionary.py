@@ -2,12 +2,13 @@
 Dictionary
 """
 from __future__ import absolute_import
+from collections import defaultdict
 import os
 import io
 from jyutping import logger
 
-CHT_DICT = {}
-CHS_DICT = {}
+CHT_DICT = defaultdict(set)
+CHS_DICT = defaultdict(set)
 
 
 def load_dictionary():
@@ -24,8 +25,12 @@ def load_dictionary():
                 continue
             line = line.strip().split('\t')
             cht, chs, jyp = line
-            CHT_DICT[cht] = jyp
-            CHS_DICT[chs] = jyp
+            if '/' in jyp:
+                jyps = set(jyp.split('/'))
+            else:
+                jyps = set([jyp])
+            CHT_DICT[cht].update(jyps)
+            CHS_DICT[chs].update(jyps)
 
 
 if __name__ == '__main__':
