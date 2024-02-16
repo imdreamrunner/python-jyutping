@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jyutping"
+version = "0.3.3"
+description = "Read the latest Real Python tutorials"
+readme = "README.rst"
+authors = [{ name = "Ivor Zhou", email = "hello@ivorz.com" }]
+license = { text= "MIT" }
+keywords = ["jyutping"]
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+Homepage = "https://github.com/imdreamrunner/python-jyutping/"
