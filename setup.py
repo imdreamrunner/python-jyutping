@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='jyutping',
-    version='0.3.2',
+    version='0.3.3',
     packages=['jyutping',],
     license='MIT',
     author='Ivor Zhou',
