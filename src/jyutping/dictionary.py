@@ -5,7 +5,7 @@ from __future__ import absolute_import
 from collections import defaultdict
 import os
 import io
-from jyutping import logger
+from . import logger
 
 CHT_DICT = defaultdict(set)
 CHS_DICT = defaultdict(set)
